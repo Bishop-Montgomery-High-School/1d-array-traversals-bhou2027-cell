@@ -18,11 +18,16 @@ public class Rotator {
      */
     public void rotateLeft(int[] arr) {
         // TODO: save arr[0] into a temporary variable
+        int temp = arr[0];
 
         // TODO: loop from i = 0 to arr.length - 2
+        for (int i = 0; i < arr.length - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
         //       assign arr[i + 1] to arr[i]
 
         // TODO: place the saved value at arr[arr.length - 1]
+        arr[arr.length - 1] = temp;
     }
 
     /**
@@ -47,10 +52,14 @@ public class Rotator {
      */
     public void rotateRight(int[] arr) {
         // TODO: save arr[arr.length - 1] into a temporary variable
-
+        int temp = arr[arr.length - 1];
         // TODO: loop from i = arr.length - 1 DOWN to i = 1
+        for (int i = arr.length - 1; i > 0; i--) {
+            arr[i] = arr[i - 1];
+        }
         //       assign arr[i - 1] to arr[i]
 
         // TODO: place the saved value at arr[0]
+        arr[0] = temp;
     }
 }
