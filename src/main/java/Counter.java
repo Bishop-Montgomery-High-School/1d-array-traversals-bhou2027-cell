@@ -26,7 +26,7 @@ public class Counter {
         }
 
         // TODO: return the counter
-        return 0; // placeholder
+        return counter; // placeholder
     }
 
     /**
@@ -54,7 +54,7 @@ public class Counter {
         //       if the element is strictly less than threshold, increment the counter
 
         // TODO: return the counter
-        return 0; // placeholder
+        return thecount; // placeholder
     }
 
     /**
@@ -82,6 +82,6 @@ public class Counter {
         //       if the element equals target, increment the counter
 
         // TODO: return the counter
-        return 0; // placeholder
+        return thisIsMyCounter; // placeholder
     }
 }
